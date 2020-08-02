@@ -1,0 +1,89 @@
+
+.slider__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.slider{
+    position: relative;
+    height: 473px;
+    width: 353px;
+    background-color: #000;
+    box-shadow: 0 0 5px 1px lightgray;
+    overflow: hidden;
+}
+.photos{
+    width: 100%;
+    height: 100%;
+}
+.photos img{
+width: 100%;
+height: 100%;
+
+}
+.newPhotos{
+    transition: all .5s ease-in;
+    opacity: 0.5;
+}
+
+.btn__left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.btn__right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.btns button{
+    padding: 5px;
+
+}
+.photos{
+    display: none;
+    transition: all 0.5 ease-in;
+
+}
+.active {
+    transition: all 0.5 ease-in;
+display: block;
+}
+.sliderGalery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+    height: 473px;
+}
+.sliderGalery__item img{
+padding: 0 5px;
+width: 115px;
+height: 155px;
+}
+.active__gal img{
+    border: 3px solid aqua;
+}
+.show{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    top: 0;
+}
+.show .active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn__show{
+    background-color: #000;
+    border: none;
+    outline: transparent;
+}
+.show .btn__show img,
+.show .btn__show iframe{
+    width: 700px;
+    height: 875px;
+}
